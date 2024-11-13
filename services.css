@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #007bff, #00c6ff); /* Gradient background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 1000;
+  padding: 10px 20px; /* Padding for navbar */
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a, .navbar-links button {
+  color: white; /* White text */
+  text-decoration: none;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Hover effects for links and buttons */
+.navbar-links a:hover, .navbar-links button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Homepage image styling */
+.homepage-image {
+  width: 100%;
+  height: auto;
+  margin-top: 60px; /* Adjust to fit below navbar */
+  filter: brightness(0.9); /* Slightly darken image */
+}
+
+/* Container for the main content */
+.container {
+  max-width: 1200px; /* Max width for the content */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around content */
+}
+
+/* Section headings */
+h1, h2 {
+  color: #333; /* Dark text color */
+}
+
+/* Service cards styling */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px; /* Space above services section */
+}
+
+.service-card {
+  background: white; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for service cards */
+.service-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+/* Additional section styling */
+section {
+  margin-bottom: 40px; /* Space between sections */
+  background-color: #fff; /* Background color for sections */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for sections */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for sections */
+}
+
+h3 {
+  color: #007bff; /* Blue color for service titles */
+}
+
+/* Contact link styling */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
